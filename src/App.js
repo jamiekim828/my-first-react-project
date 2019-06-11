@@ -18,11 +18,11 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
           <Greeting />
+          { 'Welcome to React ' }
+          { 2019 }
          {/* you can insert values using curly braces*/}
          {/* what values are alloweded? */}
-          { 'Welcome to React' }
           {/* { 5 + 5 } */}
           {/* {null}
           { true }
@@ -32,28 +32,26 @@ class App extends React.Component {
         </header>
 
         <main>
-          <Title content="This is the Title"/>
+          <Title content="Title content"/>
           
           <div>
             <h3>User Board</h3>
           </div>
           <div>
-            <p>
-            "User: "<b>Alice</b>
-            </p>
-            <LightSwitch />
+            {/* passing Alice as a prop to lightswitch */}
+            <LightSwitch user={"Alice"}/>
           </div>
           <div>
-            <p>
-            "User: "<b>Bob</b>
-            </p>
-            <LightSwitch />
+            <LightSwitch user={"Bob"} />
           </div>
           <div>
-            <p>
-            "User: "<b>Chloe</b>
-            </p>
-            <LightSwitch />
+            <LightSwitch user={"Chloe"}/>
+          </div>
+          <div>
+            <LightSwitch user={"Duke"}/>
+          </div>
+          <div>
+            <LightSwitch user={"Edison"}/>
           </div>
           
         </main>

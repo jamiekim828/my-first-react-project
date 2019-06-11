@@ -12,7 +12,8 @@ export default class LightSwitch extends Component {
     render() {
       return (
       <div>
-        <p>The User is 
+        <p>
+            {this.props.user} is  
             <b>{ this.state.active ? ' ' : ' not' }
             </b> present
         </p>
